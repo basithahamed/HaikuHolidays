@@ -1,0 +1,199 @@
+/* background: url(https://haikuholidays.com/images/1.jpeg); */
+
+
+html {
+  /* line-height: 1.15; */
+  -webkit-text-size-adjust: 100%;
+
+}
+
+
+img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+/* for the pics and banner */
+.pic {
+  min-height: 80vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(https://haikuholidays.com/images/1.jpeg);
+  /* min-width:402px; */
+  /* width: 100%; */
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  flex-direction: column;
+  padding: 0%;
+  margin: 0%;
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+  background-position: center;
+  background-color: grey;
+  background-blend-mode: multiply;
+  overflow: hidden;
+
+}
+
+#haiku {
+  font-weight: 900;
+  font-size: 4rem;
+  padding-bottom: 15px;
+}
+
+.para {
+  font-size: 1.3rem;
+  font-weight: 900;
+  margin: 0px 2px 0px 20px;
+
+}
+
+/* end */
+
+/* for the top picks */
+
+/* for the txt to center */
+.haiku-top-picks {
+  padding-top: 100px;
+}
+
+.toppicstext {
+  text-align: center;
+  padding: 20px;
+}
+
+
+
+
+/* Just demo */
+
+.common {
+  height: 250px;
+  width: 350px;
+  border: 2ppx solid;
+  /* background-color: red; */
+  margin: auto;
+  background-position: center;
+  background-size: 100% 100%;
+  padding-top: 20px;
+
+  box-shadow: rgba(0, 0, 0, 0.35) 0px -50px 40px 90px inset;
+  display: flex;
+  /* justify-content: center; */
+  align-items: flex-end;
+}
+
+.common h4 {
+  padding-bottom: 20px;
+}
+
+a
+{
+  text-decoration: none;
+}
+#htpone,
+#pilone {
+  background-image: url('https://haikuholidays.com/images/toppicks/1.png');
+
+}
+
+#htptwo,
+#piltwo {
+
+  background-image: url('https://haikuholidays.com/images/toppicks/2.png');
+}
+
+#htpthree,
+#pilthree {
+
+  background-image: url('https://haikuholidays.com/images/toppicks/3.png');
+}
+
+#htpfour {
+  background-image: url('https://haikuholidays.com/images/toppicks/4.png');
+
+}
+
+#htpfive {
+
+  background-image: url('https://haikuholidays.com/images/toppicks/5.png');
+}
+
+#htpsix {
+
+  background-image: url('https://haikuholidays.com/images/toppicks/6.png');
+}
+
+#pilfour {
+  background-image: url("https://haikuholidays.com/pilgrimage/images/pilgri/badi.jpeg");
+}
+
+#pilfive {
+  background-image: url("https://haikuholidays.com/pilgrimage/img/guj.jpg");
+}
+
+#pilsix {
+  background-image: url("https://haikuholidays.com/pilgrimage/images/pilgri/madya.jpeg");
+}
+
+
+#done {
+  background-image: url("https://haikuholidays.com/domestic/img/goa.jpg");
+}
+
+#dtwo {
+  background-image: url("https://haikuholidays.com/domestic/img/delhi.png");
+}
+
+#dthree {
+  background-image: url("https://haikuholidays.com/domestic/img/kashmir.png");
+}
+
+#dfour {
+  background-image: url("https://haikuholidays.com/domestic/img/andaman.png");
+}
+#dfive {
+  background-image: url("https://haikuholidays.com/domestic/img/darj.png");
+}
+#dsix{
+  background-image: url("https://haikuholidays.com/domestic/img/manali.png");
+}
+
+
+.common:hover {
+  box-shadow: none;
+
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  cursor: pointer;
+
+}
+
+/* for the slide */
+
+@media only screen and (max-width: 740px) {
+  #haiku {
+    font-size: 3rem;
+  }
+
+  .common-toppicks {
+    flex-wrap: wrap;
+  }
+
+  /* .boxes{
+        grid-template-columns: repeat(1, 1fr);
+
+    } */
+  .common {
+    width: 500px;
+    height: 300px;
+    /* padding-left: 100px; */
+    /* padding-right: 100px; */
+
+    margin: auto;
+  }
+
+
+
+}

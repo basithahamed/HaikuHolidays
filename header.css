@@ -1,0 +1,146 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+.row {
+    padding: 0px;
+    margin: 0px;
+}
+
+img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+/* for the topbar */
+.topbar {
+
+
+    /* margin: 10px 0px 0px 0px; */
+    height: 8%;
+    /* position: -webkit-sticky; */
+    position: fixed;
+    top: 0;
+    background-color: white;
+    width: 100%;
+    /* z-index: 1; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    box-shadow: 0 10px 10px #0000001a;
+}
+
+
+/* for the hamburger and menu */
+.ham {
+    display: none;
+}
+
+.lmobile {
+
+    /* background-color: red; */
+    display: none;
+
+
+}
+
+/* for the X button */
+.closebutton {
+    float: right;
+    padding: 20px;
+    font-size: 20px;
+}
+
+
+/* for the logo */
+.logo {
+    height: 100px;
+
+}
+
+/* for the links */
+
+.links {
+    display: flex;
+    gap: 15px;
+}
+
+.links li {
+
+    list-style: none;
+
+}
+
+.top-left {
+    padding-left: 20px;
+}
+
+.top-right {
+    padding-right: 20px;
+}
+
+/* for the mobile links */
+.mobilelinks {
+    list-style: none;
+}
+
+/* end */
+
+/* for the Desktop View Image */
+/*for the tablet*/
+
+
+/* #responsive */
+@media only screen and (max-width: 600px) {
+    .desklink {
+        display: none;
+    }
+
+    /* making the mobile menu */
+    .ham {
+        display: block;
+    }
+
+    .ham {
+        padding-right: 15px;
+    }
+
+
+    .lmobile {
+        position: fixed;
+        top: 0px;
+        bottom: 0;
+
+        right: 0;
+        width: 250px;
+        background-color: #e2c7a0;
+        /* margin-top: -10px; */
+        height: 100vh;
+
+
+        /* padding: 10px; */
+        /* margin-top: -20px; */
+        box-shadow: 0 10px 10px #0000001a;
+        /* transition: 1.5s; */
+        /* float: right;  */
+
+        padding: 0;
+
+    }
+
+    .mobilelinks {
+        /* text-align: center; */
+        /* padding: 10px; */
+        margin-top: 20px;
+        padding-left: 20px;
+
+    }
+
+    .mobilelinks li {
+        padding-top: 30px;
+    }
+
+
+}

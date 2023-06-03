@@ -1,0 +1,112 @@
+
+
+<div class="haiku-top-picks">
+    <h2 class="toppicstext">HAIKU'S TOP PICKS</h2>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12 col-md-6 col-lg-4 my-2  common " id="one">
+                <h1 class="text-white">Hellpo</h1>
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-4 my-2  common " id="two">
+
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-4 my-2  common " id="three">
+
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-4 my-2  common " id="four">
+
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-4 my-2  common " id="five">
+
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-4 my-2  common " id="six">
+
+            </div>
+        </div>
+    </div>
+</div> 
+
+<div class="haiku-top-picks">
+    <h2 class="toppicstext">HAIKU'S TOP PICKS</h2>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12 col-md-6 col-lg-4 my-2  common " id="one">
+                <h1 class="text-white">Hellpo</h1>
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-4 my-2  common " id="two">
+
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-4 my-2  common " id="three">
+
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-4 my-2  common " id="four">
+
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-4 my-2  common " id="five">
+
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-4 my-2  common " id="six">
+
+            </div>
+        </div>
+    </div>
+</div> -
+
+
+
+<!-- for the footer -->
+<footer>
+    <!-- <div class="container"> -->
+        <div class="row">
+            <div class="col-sm-12 col-md-12 col-lg-4 my-4 footerfirst">
+                <div style="text-align: justify;">
+                    <h1 class="text-white text-center">Haiku Holidays</h1>
+                    <p class="text-white text-center">We provide you the best travel experience
+                        possible!</p>
+                    <br>
+                    <!-- <button type="button" class="btn btn-light text-center">Contact Us</button> -->
+                    <div class="text-center">
+                        <button type="button" class="btn btn-light">Light</button>
+                    </div>
+
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-12 col-lg-4 my-4">
+                <h1 class="text-white text-center">Follow us on:</h1>
+                <div class="text-center">
+                    <a href="text-center"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="text-center"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="text-center"><i class="fa-regular fa-envelope"></i></a>
+                </div>
+
+
+            </div>
+            <div class="col-sm-12 col-md-12 col-lg-4 my-4 mx-0">
+                <h1 class="text-white text-center ">Contact Us</h1>
+                <div class="h-50 d-flex align-items-center justify-content-center info ">
+                    <ul class="address">
+                        <li class="text-white"><i class="fa-solid fa-phone"></i>&nbsp; +91 88386 13687</li>
+                        <li class="text-white"><i class="fa-solid fa-envelope"></i>&nbsp; info@haikuholidays.com
+                        </li>
+                        <li class="text-white"><i class="fa-solid fa-location-dot"></i>&nbsp; +91 88386 1368</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+    <!-- </div> -->
+</footer>
+
+<div class="credits">
+    <div class="left">
+        <p>Copyright © 2023 by
+            Haiku Holidays
+            . All Rights Reserved.</p>
+    </div>
+    <div class="right">
+        <p>This website is crafted by
+            Passion Code</p>
+    </div>
+</div>
