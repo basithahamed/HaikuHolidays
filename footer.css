@@ -18,6 +18,7 @@ ul {
 
 .address {
     /* margin-left: 250px; */
+    margin-top: 40px;
     text-align: left;
 }
 
@@ -44,7 +45,7 @@ ul {
 
 @media only screen and (max-width: 600px) {
     .address {
-        margin: 0;
+        /* margin-top: 40px; */
     }
     .info{
         padding-left: 50px;

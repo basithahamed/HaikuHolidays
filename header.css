@@ -94,6 +94,9 @@ img {
 
 /* #responsive */
 @media only screen and (max-width: 600px) {
+    .topbar{
+        height: 12%;
+    }
     .desklink {
         display: none;
     }

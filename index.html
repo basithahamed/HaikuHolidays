@@ -20,14 +20,22 @@
         integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- end -->
+
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@200&family=Island+Moments&family=Montserrat:ital,wght@0,100;1,200&family=Open+Sans:wght@300;400&family=Poppins:wght@800&display=swap"
+        rel="stylesheet">
+    <!-- end -->
     <!-- for the header -->
     <link rel="stylesheet" href="header.css">
     <link rel="stylesheet" href="footer.css">
     <!-- for the index style -->
     <link rel="stylesheet" href="indexstyle.css">
 
-    <link rel="stylesheet" href="magicscroll/magicscroll.css" />
-    <script src="magicscroll/magicscroll.js"></script>
+    <link rel="stylesheet" href="magicscroll.css" />
+    <script src="magicscroll.js"></script>
 
 
 
@@ -62,7 +70,7 @@
 
 
     </div>
-    <div class="lmobile" id="lmobile">
+    <div class="lmobile" id="lmobile" class="bold">
         <p onclick="showMenu()" class="closebutton"><i class="fa-solid fa-x"></i></p>
         <ul class="mobilelinks">
             <li class="link-items">Home</li>
@@ -76,7 +84,7 @@
 
     <!-- for the main banner -->
 
-    <div class="hero-banner">
+    <div class="hero-banner" class="bold">
         <div class="pic" id="pic">
             <h1 id="haiku">Haiku Holidays</h1>
             <p class="para"><b>You choose the destination,we provide you the experience!</b></p>
@@ -88,7 +96,7 @@
 
     <!-- end -->
 
-    <div class="haiku-top-picks">
+    <div class="haiku-top-picks" class="bold">
         <h2 class="toppicstext">HAIKU'S TOP PICKS</h2>
 
         <div class="container">
@@ -115,10 +123,10 @@
         </div>
     </div>
 
-    <div class="pilgri">
+    <div class="pilgri" style="text-align: center; padding: 100px 0px 10px 0px;" >
         <h2 class="toppicstext">PILGRIMAGE</h2>
 
-        <div class="container">
+        <div class="container" >
             <div class="row">
                 <a class="col-sm-12 col-md-6 col-lg-4 my-2  common " id="pilone">
                     <h4 class="text-white">Shirdi</h4>
@@ -147,7 +155,7 @@
         </div>
     </div>
 
-    <div class="domestic">
+    <div class="domestic" style="text-align: center; padding: 100px 0px 10px 0px;"class="bold">
         <h2 class="toppicstext">Domestic</h2>
 
         <div class="container">
@@ -180,8 +188,9 @@
     </div>
 
     <!-- test -->
-<!-- 
-    <div class="MagicScroll" data-options="mode: animation;" style="padding-bottom: 30px;">
+    <h4 style="text-align: center; padding: 40px 0px 10px 0px;">Testimonials</h4>
+    <div class="MagicScroll" data-options="mode: animation;">
+
         <img src="https://haikuholidays.com/images/testimonials/1.png" alt="haiku holidays">
         <img src="https://haikuholidays.com/images/testimonials/2.png" alt="haiku holidays">
         <img src="https://haikuholidays.com/images/testimonials/3.png" alt="haiku holidays">
@@ -194,17 +203,8 @@
         <img src="https://haikuholidays.com/images/testimonials/10.png" alt="haiku holidays">
         <img src="https://haikuholidays.com/images/testimonials/11.png" alt="haiku holidays">
         <img src="https://haikuholidays.com/images/testimonials/12.png" alt="haiku holidays">
-      </div><br><br><br><br><br> -->
-
-
-      <!-- <div class="MagicScroll">
-        <img src="https://haikuholidays.com/images/testimonials/1.png" alt="haiku holidays">
-        <img src="https://haikuholidays.com/images/testimonials/2.png" alt="haiku holidays">
-        <img src="https://haikuholidays.com/images/testimonials/3.png" alt="haiku holidays">
-
-    </div> -->
-    <!-- end -->
-
+        <!-- end -->
+    </div>
 
 
     <!-- for the footer -->
@@ -212,25 +212,29 @@
         <!-- <div class="container"> -->
         <div class="row">
             <div class="col-sm-12 col-md-12 col-lg-4 my-4 footerfirst">
-                <div style="text-align: justify;">
+                <div style="text-align: justify;" >
                     <h1 class="text-white text-center">Haiku Holidays</h1>
                     <p class="text-white text-center">We provide you the best travel experience
                         possible!</p>
+                        <!-- <p class="text-white text-center btn">sssss</p> -->
                     <br>
                     <!-- <button type="button" class="btn btn-light text-center">Contact Us</button> -->
-                    <div class="text-center">
-                        <button type="button" class="btn btn-light">Contact Us</button>
-                    </div>
+                    <!-- <div class="text-center"> -->
+                    <!-- <button type="button" class="buttonpill">Contact Us</button> -->
+                    <button class="btn btn-secondary" style="display: flex; margin: auto;">Contact Us !</button>
+                    <!-- <div ><p class="buttonpill">Contact Us</p>></div> -->
+                    <!-- </div> -->
 
                 </div>
             </div>
             <div class="col-sm-12 col-md-12 col-lg-4 my-4">
                 <h1 class="text-white text-center">Follow us on:</h1>
                 <div class="text-center">
-                    <a href="text-center" style="font-size: 35px; "><i class="fa-brands fa-facebook"></i></a>
-                    <a href="text-center" style="font-size: 35px; padding-left: 10px;"><i
+                    <a href="text-center" style="font-size: 30px; color:#fff; "><i
+                            class="fa-brands fa-facebook"></i></a>
+                    <a href="text-center" style="font-size: 30px; padding-left: 10px;color:#fff"><i
                             class="fa-brands fa-instagram"></i></a>
-                    <a href="text-center" style="font-size: 35px; padding-left: 10px;"><i
+                    <a href="text-center" style="font-size: 30px; padding-left: 10px;color:#fff"><i
                             class="fa-regular fa-envelope"></i></a>
                 </div>
 
@@ -240,10 +244,10 @@
                 <h1 class="text-white text-center ">Contact Us</h1>
                 <div class="h-50 d-flex align-items-center justify-content-center info ">
                     <ul class="address">
-                        <li class="text-white"><i class="fa-solid fa-phone"></i>&nbsp; +91 88386 13687</li>
-                        <li class="text-white"><i class="fa-solid fa-envelope"></i>&nbsp; info@haikuholidays.com
-                        </li>
-                        <li class="text-white"><i class="fa-solid fa-location-dot"></i>&nbsp; +91 88386 1368</li>
+                        <li class="text-white"><p> <i class="fa-solid fa-phone"></i>&nbsp;+91 88386 13687</p></li>
+                        <li class="text-white"><p><i class="fa-solid fa-envelope"></i>&nbsp; info@haikuholidays.com
+                        </p></li>
+                        <li class="text-white"><p><i class="fa-solid fa-location-dot"></i>&nbsp; +91 88386 1368</p></li>
                     </ul>
                 </div>
             </div>
