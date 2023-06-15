@@ -1,0 +1,184 @@
+body
+{
+    background-image: linear-gradient(to right top, #fcfdf2, #f9f1fb, #fbf0f8, #fdeff4, #feeef1, #ffefef, #fff0ed, #fff1eb, #fff3ea, #fff6ea, #fff9ea, #fefceb);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+*
+{
+    padding: 0px;
+    margin: 0px;
+}
+.banners {
+
+
+
+    display: flex;
+    height: 500px;
+    border: 2px solid ;
+}
+
+
+
+.deskheadingright {
+    margin-top: 150px;
+    padding: 10px;
+}
+
+.deskheadingright {
+
+    display: flex;
+}
+
+.twobt {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px 20px;
+    color: white;
+    border: 0.1px solid rgb(66, 66, 66);
+    font-size: 25px;
+    border-radius: 10px;
+
+
+}
+
+.twobtbutton {
+    background-color: #8b0000;
+    padding: 10px 40px;
+    font-size: 20px;
+    color: white;
+    border-radius: 15px;
+    outline: none;
+    border: none;
+    margin: 10px 70px 0px 0px;
+    float: right;
+
+}
+.marqueediv
+{
+    text-align: center;
+    width: 100%;
+    margin: auto;
+    /* background-color: #; */
+    background-color: #362916;
+    color: white;
+}
+
+.marquee {
+    font-size: 30px;
+    text-align: center;
+    width: 50%;
+    /* padding-left: 10px; */
+    
+    margin: auto;
+}
+
+#price
+{
+    display: flex;
+    border: 2px solid;
+    height: 100px;
+    
+    margin-top: 10px;
+    justify-content: space-between;
+}
+#readMorebtn
+{
+    display: none;
+}
+
+.paragraph
+{
+    margin-top: 20px;
+}
+
+#packagelistdiv
+{
+    text-align: left;
+
+    padding: 10px;
+}
+
+.wholelist
+{
+    margin-left: 8%;
+}
+.packagelistitem
+{
+    font-size: 25px;
+    
+}
+.underline
+{
+    text-decoration: underline;
+}
+.enquirybtnclass
+{
+    text-align: center;
+    margin: 3% 0px 3% 0px;
+}
+.enquirybtn
+{
+    background-color: #8b0000;
+    padding: 10px 40px;
+    font-size: 20px;
+    color: white;
+    border-radius: 15px;
+    outline: none;
+    border: none;
+
+}
+#paragraph
+{
+    margin-top: 20px;
+    padding-left: 7%;
+    padding-right: 7%;
+    font-size: 22px;
+    
+}
+#paragraph {
+    line-height: 40px;
+    text-align: justify;    
+    font-family: 'Poppins',sans-serif;
+    /* color: wheat; */
+}
+.redcolor
+{
+    color:#8b0000;
+    font-weight: bold;
+}
+
+.body
+{
+    margin-top: 100px;
+}
+
+@media only screen and (max-width: 740px) {
+    .banners
+    {
+        height: 600px;   
+        flex-direction: column;
+    }
+    .deskheading {
+        display: none;
+    }
+
+   
+
+    .deskheadingright {
+        display: none;
+    }
+
+    .twobtbutton {
+        display: none;
+    }
+    #readmore
+    {
+        display: none;
+    }
+    #readMorebtn
+    {
+        display: block;
+    }
+
+}

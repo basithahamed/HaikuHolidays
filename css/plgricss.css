@@ -1,0 +1,76 @@
+/* Body css for the Pilgrimage  */
+.body
+{
+    padding-top: 100px;
+}
+p
+{
+
+    /* font-family: 'Hanken Grotesk', sans-serif;
+font-family: 'Island Moments', cursive;
+font-family: 'Montserrat', sans-serif;
+font-family: 'Open Sans', sans-serif;
+font-family: 'Poppins', sans-serif; */
+}
+#packagelistdiv
+{
+    text-align: left;
+    /* margin-top: 30px; */
+    margin-bottom: 30px;
+    padding: 10px;
+}
+.wholelist
+{
+    margin-left: 8%;
+}
+.packagelistitem
+{
+    font-size: 25px;
+    
+}
+.underline
+{
+    text-decoration: underline;
+}
+.enquirybtnclass
+{
+    text-align: center;
+}
+.enquirybtn
+{
+    background-color: #8b0000;
+    padding: 10px 40px;
+    font-size: 20px;
+    color: white;
+    border-radius: 15px;
+    outline: none;
+    border: none;
+
+}
+#paragraph
+{
+    margin-top: 20px;
+    padding-left: 7%;
+    padding-right: 7%;
+    font-size: 22px;
+    
+}
+#paragraph {
+    line-height: 40px;
+    text-align: justify;    
+    font-family: 'Poppins',sans-serif;
+    /* color: wheat; */
+}
+.redcolor
+{
+    color:#8b0000;
+    font-weight: bold;
+}
+@media only screen and (max-width: 740px) {
+    .packagelistitem
+    {
+        font-size: 18px;
+        
+    }
+
+}

@@ -23,6 +23,8 @@ function changeMe(y)
 
 }
 
+
+
 imageArr=['https://haikuholidays.com/images/1.jpeg','https://haikuholidays.com/images/2.jpeg']
 var color=0;
 setInterval(() => {

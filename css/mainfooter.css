@@ -43,6 +43,14 @@ ul {
     margin: 0px;
 }
 
+.btn {
+    padding: 0.9rem 2.4rem;
+    border-radius: 50px;
+    font-weight: 600;
+    color: white;
+    border: 0.1px solid white;
+    background-color: #362916;
+  }
 @media only screen and (max-width: 600px) {
     .address {
         /* margin-top: 40px; */
