@@ -1,144 +1,186 @@
-/* Banner Style */
-.containers {
+<!DOCTYPE html>
+<html lang="en">
 
-    /* height: 500px;
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- ######## BootStrap ###### -->
+    <!-- # css -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <!-- ## js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
+    <!-- end -->
+    <!-- font awsome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- end -->
 
-    border: 2px solid;
-
-    background: url('https://haikuholidays.com/pilgrimage/img/main1.jpeg');
-
-    background-position: cover; */
-    height: 600px;
-    background: radial-gradient(circle, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.5)), url(https://haikuholidays.com/pilgrimage/img/main1.jpeg);
-    background-size: cover;
-    padding: 180px 0 20px 110px;
-    background-position: center;
-    width: 90%;
-    margin: auto;
-    margin-top: 10px;
-    color: white;
-    font-weight: 900;
-    background-repeat: no-repeat;
-}
-a
-
-.hero-banner {
-    display: flex;
-    justify-content: space-between;
-}
-
-.deskheadingright {
-    margin-top: 150px;
-    padding: 10px;
-}
-
-.deskheadingright {
-
-    display: flex;
-}
-
-.twobt {
-    background-color: rgba(0, 0, 0, 0.5);
-    padding: 10px 20px;
-    color: white;
-    border: 0.1px solid rgb(66, 66, 66);
-    font-size: 25px;
-    border-radius: 10px;
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@200&family=Island+Moments&family=Montserrat:ital,wght@0,100;1,200&family=Open+Sans&family=Poppins:wght@400;500&display=swap"
+        rel="stylesheet">
+    <!-- end -->
+    <!-- for the header -->
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/goa-top.css">
+    <link rel="stylesheet" href="../css/pilgrimagetopbar.css">
+    <link rel="stylesheet" href="../css/secondaryfooter.css">
 
 
-}
+    <!-- for the page style -->
+    <!-- <link rel="stylesheet" href="../css/wholepilgri.css"> -->
+    <!-- <link rel="stylesheet" href="/css/font.css"> -->
+    <link rel="stylesheet" href="/css/goatype.css">
+    <!-- Font  this page only Google-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@200&family=Island+Moments&family=Montserrat:ital,wght@0,100;1,200&family=Open+Sans&family=Poppins:ital,wght@1,900&display=swap"
+        rel="stylesheet">
+    <!-- end -->
 
-.twobtbutton {
-    background-color: #8b0000;
-    padding: 10px 40px;
-    font-size: 20px;
-    color: white;
-    border-radius: 15px;
-    outline: none;
-    border: none;
-    margin: 10px 70px 0px 0px;
-    float: right;
 
-}
 
-.marquee-w {
-    font-size: 30px;
-    display: none;
-    width: 45%;
-    padding-left: 10px;
-    /* border: 2px solid ; */
-    color: yellow;
-    margin: auto;
-}
 
-.mobilebuttons {
-    display: flex;
-    justify-content: center;
-}
+</head>
+<script>
+    function readMore() {
+        var x = document.getElementById("readmore")
+        if (x.style.display == "block") {
+            document.getElementById("readMorebtn").innerHTML = "ReadMore"
+            x.style.display = 'none';
 
-.mobilebt {
-    background-color: rgba(0, 0, 0, 0.5);
-    padding: 10px 20px;
-    color: white;
-    border: 0.1px solid rgb(66, 66, 66);
-    font-size: 25px;
-    border-radius: 10px;
-}
-
-.twobtbuttonmobile {
-    background-color: #8b0000;
-    padding: 10px 40px;
-    font-size: 20px;
-    color: white;
-    border-radius: 15px;
-    outline: none;
-    border: none;
-    /* margin: 10px 70px 0px 0px; */
-    margin-top: 10px;
-
-}
-
-@media only screen and (min-width: 1100px) {
-    .marquee-w {
-        display: block;
+        }
+        else {
+            document.getElementById("readMorebtn").innerHTML = "ReadLess"
+            x.style.display = 'block';
+        }
 
     }
+</script>
+<style>
 
-    
+</style>
 
-}
+<body>
+
+    <!-- header starting  -->
+    <!-- <div class="topbar">
+
+        <div class="top-left ">
+            <div class="logo">
+                <img src="https://haikuholidays.com/images/logo.png" alt="">
+            </div>
+        </div>
+        <div class="ham" onclick="showMenu()">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+
+        <div class="top-right  desklink ">
+
+            <ul class="links">
+                <li class="link-items"><a href="../index.html">Home</a></li>
+                <li class="link-items"><a href="#">Pilgrimage</a></li>
+                <li class="link-items"><a href="#">Domestic</a></li>
+                <li class="link-items"><a href="#">International</a></li>
+                <li class="link-items"><a href="#">Contact</a></li>
+            </ul>
+
+        </div>
+
+    </div>
+    <div class="lmobile" id="lmobile" class="bold">
+        <p onclick="showMenu()" class="closebutton"><i class="fa-solid fa-x"></i></p>
+        <ul class="mobilelinks">
+            <li class="link-items">Home</li>
+            <li class="link-items">Pilgrimage</li>
+            <li class="link-items">Domestic</li>
+            <li class="link-items">International</li>
+            <li class="link-items">Contact</li>
+        </ul>
+    </div> -->
+
+    <main>
+        <!-- for the banner and stuffs -->
+        <div class="content">
+            <div class="title">
+                <p class="titlep">Haiku Holidays Goa Package</p>
+            </div>
+            <div class="columns">
+                <div class="left">
+                    <p class="one">Duration</p>
+                    <p class="two">3 Nights / 4 Days</p>
+                </div>
+                <div class="right" style="right: 403px;">
+                    <p class="one">Price</p>
+                    <p class="two">Rs. 58,900 per couple</p>
+                </div>
+            </div>
+            <img src="https://haikuholidays.com/domestic/img/main2.jpg" alt="">
+        </div>
+       
+       
+       
+
+    </main>
 
 
-@media only screen and (min-width: 740px) {
-    .mobileheading {
-        display: none;
-    }
-}
 
-@media only screen and (max-width: 740px) {
-    .containers
-    {
-        height: 350px;
-    }
-    .deskheading {
-        display: none;
-    }
+    <!-- <footer>
+        <div class="containerfooter">
+            <div class="row">
+                <div class="col-md-12 col-lg-4 col-sd-12 text-center my-4">
+                    <h4>HAIKU HOLIDAYS</h4>
+                    <p>We provide you the best travel experience possible!</p>
+                </div>
+                <div class="col-md-12 col-lg-4 col-sd-12 text-center my-4">
+                    <h4>Follow us on:</h4>
+                    <a href="#" style="font-size: 25px; color:#fff; "><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#" style="font-size: 25px; padding-left: 10px;color:#fff"><i
+                            class="fa-brands fa-instagram"></i></a>
+                    <a href="#" style="font-size: 25px; padding-left: 10px;color:#fff"><i
+                            class="fa-regular fa-envelope"></i></a>
+                </div>
+                <div class="col-md-12 col-lg-4 col-sd-12 text-center my-4">
+                    <ul style>
+                        <li class="text-white">
+                            <p> <i class="fa-solid fa-phone"></i>&nbsp;+91 88386 13687</p>
+                        </li>
+                        <li class="text-white">
+                            <p><i class="fa-solid fa-envelope"></i>&nbsp; info@haikuholidays.com
+                            </p>
+                        </li>
+                    </ul>
+                </div>
 
-    .mobileheading {
-        display: block;
-        text-align: center;
-        margin-top: 20px;
-    }
 
-    .deskheadingright {
-        display: none;
-    }
+            </div>
+        </div>
+    </footer> -->
+    <!-- <div class="credits">
+        <div id="pcode">
 
-    .twobtbutton {
-        display: none;
-    }
+            <div>
+                <p style="padding: 0px; margin: 0px;">Copyright © 2023 by
+                    Haiku Holidays
+                    . All Rights Reserved.</p>
+            </div>
+          
+            <div>
+                <p style="padding: 0px; margin: 0px;">This website is crafted by
+                    Passion Code</p>
+            </div>
+        </div>
+    </div> -->
 
-    .marquee-w {
-        display: none;
-    }
-}
+</body>
+
+</html>

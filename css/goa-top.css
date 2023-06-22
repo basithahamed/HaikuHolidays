@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.content img {
+    border-radius: 20px;
+    box-shadow: 5px 10px 18px rgb(141, 141, 141);
+}
+.content .title {
+    display: flex;
+    justify-content: flex-start;
+    margin-right: 480px;
+    align-items: center;
+    padding-top: 60px;
+    padding-bottom: 10px;
+}
+.content .titlep {
+    font-size: 22px;
+}
+.content .title .logo {
+    padding: 10px;
+    box-shadow: none;
+}
+.columns {
+    display: flex;
+    justify-content: space-between;
+}
+.columns .right {
+    position: relative;
+    display: flex;
+    padding: 2px;    
+    right: 460px;
+}
+.columns .left {
+    position: relative;
+    left: 390px;
+    display: flex;
+    padding: 2px;    
+}
+.columns .left .one, .columns .left .two ,
+.columns .right .one, .columns .right .two {
+    background-color: #E5DCD2;
+    padding: 8px 20px;
+    font-size: 13px;
+    margin: 2px;
+    margin-bottom: 15px;
+}
+.columns .left .one, .columns .right .one {
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+.columns .left .two, .columns .right .two {
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    color: darkred;
+}
+
+@media screen and (max-width: 890px) {
+    
+    .content .img {
+        width: 500px;
+        height: 350px;
+    }
+}
+@media screen and (max-width: 799px) {
+    .columns .right { 
+        right: 300px;
+    }
+    .columns .left {
+        left: 300px;  
+    }
+   
+}
+@media screen and (max-width: 735px) {
+
+    .content .title {
+        margin-right: 0;
+    }
+}
+@media screen and (max-width: 700px) { 
+   
+    .columns .right { 
+        right: 0;
+    }
+    .columns .left {
+        left: 0;  
+    }
+}
+@media screen and (max-width: 520px) { 
+ 
+    .columns {
+        flex-direction: column;
+    }
+    .content .img {
+        width: 400px;
+        height: 250px;
+    }
+  
+}
+@media screen and (max-width: 420px) {
+    .content .img {
+        display: none;
+    }
+
+    .content p {
+        font-size: 18px;
+    }
+} 
