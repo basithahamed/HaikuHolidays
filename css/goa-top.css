@@ -109,7 +109,7 @@
 }
 @media screen and (max-width: 420px) {
     .content .img {
-        display: none;
+        /* display: none; */
     }
 
     .content p {

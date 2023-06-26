@@ -77,8 +77,8 @@
 
         <div class="top-left ">
             <div class="logo">
-                <img src="https://haikuholidays.com/images/logo.png" alt="">
-            </div>
+ <a href="../index.html">                <img src="https://haikuholidays.com/images/logo.png" alt="">
+        </a>            </div>
         </div>
         <div class="ham" onclick="showMenu()">
             <i class="fa-solid fa-bars"></i>
@@ -89,9 +89,9 @@
             <ul class="links">
                 <li class="link-items"><a href="../index.html">Home</a></li>
                 <li class="link-items"><a href="#">Pilgrimage</a></li>
-                <li class="link-items"><a href="#">Domestic</a></li>
+                <li class="link-items"><a href="../domestic.html">Domestic</a></li>
                 <li class="link-items"><a href="#">International</a></li>
-                <li class="link-items"><a href="#">Contact</a></li>
+                <li class="link-items"><a href="#contact">Contact</a></li>
             </ul>
 
         </div>
@@ -175,8 +175,8 @@
             </div>
           
             <div>
-                <p style="padding: 0px; margin: 0px;">This website is crafted by
-                    Passion Code</p>
+                               <a href="https://www.passioncode.in/"><p style="padding: 0px; margin: 0px;">This website is crafted by <b>Passion Code</b></p></a>
+
             </div>
         </div>
     </div> -->

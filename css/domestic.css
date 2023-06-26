@@ -1,0 +1,160 @@
+body {
+    font-family: var(--body-font);
+    font-size: var(--normal-font-size);
+    background-image: linear-gradient(to right, #f9efe0 0%, #ffdbcf 100%);
+
+}
+
+.body {
+    margin-top: 100px;
+}
+
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+.dabba {
+    width: 60%;
+    margin: auto;
+    padding-top: 5px;
+    font-size: 20px;
+}
+
+.box {
+    /* border: 2px solid; */
+    height: 450px;
+    width: 300px;
+    margin: 10px;
+    margin: auto;
+    color: black;
+    padding: 0px;
+    /* padding: 10px; */
+
+}
+
+.common {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: flex-end;
+    
+}
+
+.insidebox1 {
+    width: 100%;
+    margin: 10px;
+    filter: brightness(100%);
+
+}
+
+.box a{
+    color: white;
+}
+.insidebox1 p {
+    font-size: 14px;
+
+
+}
+
+.insidebox2 i {
+    /* border: 2px solid red; */
+    padding: 12px;
+    /* margin-left: 100px; */
+    background-color: #a17c5a;
+}
+
+#goa {
+    background: url('https://haikuholidays.com/domestic/assets/img/goa.jpg');
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    
+    box-shadow: rgba(0, 0, 0, 0.35) 0px -50px 40px 90px inset;
+
+}
+
+
+.box:hover {
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+#delhi
+{
+    background: url('https://haikuholidays.com/domestic/assets/img/delhi.jpg');
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    box-shadow: rgba(0, 0, 0, 0.35) 0px -50px 40px 90px inset;
+
+}
+#darj
+{
+    background: url('https://haikuholidays.com/domestic/assets/img/darj.jpg');
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    box-shadow: rgba(0, 0, 0, 0.35) 0px -50px 40px 90px inset;
+
+}
+#andaman
+{
+    background: url('https://haikuholidays.com/domestic/assets/img/andaman.jpg');
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    box-shadow: rgba(0, 0, 0, 0.35) 0px -50px 40px 90px inset;
+
+}
+#kashmir
+{
+    background: url('https://haikuholidays.com/domestic/assets/img/kashmir.jpg');
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    box-shadow: rgba(0, 0, 0, 0.35) 0px -50px 40px 90px inset;
+
+}
+#manali
+{
+    background: url('https://haikuholidays.com/domestic/assets/img/manali.jpg');
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    box-shadow: rgba(0, 0, 0, 0.35) 0px -50px 40px 90px inset;
+
+}
+#mussoorie
+{
+    background: url('https://haikuholidays.com/domestic/assets/img/muss.jpg');
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    box-shadow: rgba(0, 0, 0, 0.35) 0px -50px 40px 90px inset;
+
+}
+
+.twobox
+{
+    display: flex;
+
+}
+/* .firstbox , .secondbox
+{
+    height: 300px;
+    width: 50vw;
+    border: 2px solid;
+    font-size: 13px;
+} */
+@media only screen and (max-width: 1100px) {
+    .dabba {
+        width: 100%;
+    }
+
+}
