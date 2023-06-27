@@ -50,8 +50,8 @@
 
         <div class="top-left ">
             <div class="logo">
- <a href="../index.html">                <img src="https://haikuholidays.com/images/logo.png" alt="">
-        </a>                <!-- <H1>Logo</H1> -->
+                <a href="../index.html"> <img src="https://haikuholidays.com/images/logo.png" alt="">
+                </a> <!-- <H1>Logo</H1> -->
             </div>
         </div>
         <div class="ham" onclick="showMenu()">
@@ -62,23 +62,88 @@
 
             <ul class="links">
                 <li class="link-items"><a href="index.html">Home</a></li>
-                <li class="link-items"><a href="pilgrimage.html">Pilgrimage</a></li>
-                <li class="link-items"><a href="domestic.html">Domestic</a></li>
+                <!-- <li class="link-items"></li> -->
+                <li class="link-items">
+                    <div class="dropdown">
+                        <a href="pilgrimage.html">Pilgrimage</a>
+                        <div class="dropdown-content">
+                            <ul style="padding: 0px;">
+                                <li class="link-items" style="padding-top: 5px;" id="some"><a
+                                        href="pilgrimage/shirdi.html" >Shirdi</a></li>
+                                <li class="link-items" style="padding-top: 5px;" id="some"><a href="pilgrimage/kasi.html">Kasi</a>
+                                </li>
+                                <li class="link-items" style="padding-top: 5px;" id="some"><a
+                                        href="pilgrimage/odisha.html">Odisha</a></li>
+                                <li class="link-items" style="padding-top: 5px;" id="some"><a
+                                        href="pilgrimage/baidyanth.html">Baidyanath Jyothirlinga</a></li>
+                                <li class="link-items" style="padding-top: 5px;" id="some"><a
+                                        href="pilgrimage/gujarat.html">Gujarat</a></li>
+                                <li class="link-items" style="padding-top: 5px;" id="some"><a href="pilgrimage/madya.html">Madya
+                                        Pradesh</a></li>
+                            </ul>
+
+                        </div>
+                    </div>
+                </li>
+
+                <!-- <li class="link-items"><a href="domestic.html">Domestic</a></li> -->
+                <li class="link-items"> <div class="dropdown">
+                    <a href="pilgrimage.html">Domestic</a>
+                    <div class="dropdown-content">
+                        <ul style="padding: 0px;">
+                            <li class="link-items" style="padding-top: 5px;" id="some"><a
+                                    href="pilgrimage/goa.html" >Goa</a></li>
+                            <li class="link-items" style="padding-top: 5px;" id="some"><a href="pilgrimage/delhi.html">Delhi</a>
+                            </li>
+                            <li class="link-items" style="padding-top: 5px;" id="some"><a
+                                    href="pilgrimage/kashmir.html">Kashmir</a></li>
+                            <li class="link-items" style="padding-top: 5px;" id="some"><a
+                                    href="pilgrimage/andaman.html">Andaman</a></li>
+                            <li class="link-items" style="padding-top: 5px;" id="some"><a
+                                    href="pilgrimage/darjeeling.html">Darjeeling</a></li>
+                            <li class="link-items" style="padding-top: 5px;" id="some"><a href="pilgrimage/manali.html">Manali</a></li>
+                            <li class="link-items" style="padding-top: 5px;" id="some"><a href="pilgrimage/mussoorie.html">Mussoorie</a></li>
+                        </ul>
+
+                    </div>
+                </div></li>
+
                 <li class="link-items"><a href="#">International</a></li>
                 <li class="link-items"><a href="#contact">Contact</a></li>
             </ul>
-
         </div>
-
     </div>
+
     <div class="lmobile" id="lmobile" class="bold">
         <p onclick="showMenu()" class="closebutton"><i class="fa-solid fa-x"></i></p>
         <ul class="mobilelinks">
             <li class="link-items"><a href="index.html">Home</a></li>
-            <li class="link-items"><a href="pilgrimage.html">Pilgrimage</a></li>
+            <li class="link-items">
+                <div class="dropdown">
+                    <a href="pilgrimage.html">Pilgrimage</a>
+                    <div class="dropdown-content">
+                        <ul>
+                            <li class="link-items" style="padding-top: 5px;" ><a href="pilgrimage/shirdi.html">Shirdi</a>
+                            </li>
+                            <li class="link-items" style="padding-top: 5px;"><a href="pilgrimage/kasi.html">Kasi</a>
+                            </li>
+                            <li class="link-items" style="padding-top: 5px;"><a href="pilgrimage/odisha.html">Odisha</a>
+                            </li>
+                            <li class="link-items" style="padding-top: 5px;"><a
+                                    href="pilgrimage/baidyanth.html">Baidyanath Jyothirlinga</a></li>
+                            <li class="link-items" style="padding-top: 5px;"><a
+                                    href="pilgrimage/gujarat.html">Gujarat</a></li>
+                            <li class="link-items" style="padding-top: 5px;"><a href="pilgrimage/madya.html">Madya
+                                    Pradesh</a></li>
+                        </ul>
+
+                    </div>
+                </div>
+            </li>
             <li class="link-items"><a href="domestic.html">Domestic</a></li>
             <li class="link-items"><a href="#">International</a></li>
-            <li class="link-items"><a href="#">Contact</a></li>
+            <li class="link-items"><a href="#contact">Contact</a></li>
+
         </ul>
     </div>
     <!-- header Enddddd  -->
@@ -236,9 +301,11 @@
 
 
                 </div>
-                
+
                 <div class="col-sm-12 col-md-12 col-lg-4 my-4 mx-0">
-                    <a href="tel:+918838613687"><h2 class="text-white text-center ">Contact Us</h2></a>
+                    <a href="tel:+918838613687">
+                        <h2 class="text-white text-center ">Contact Us</h2>
+                    </a>
                     <div class="h-50 d-flex align-items-center justify-content-center info ">
                         <ul class="address">
                             <li class="text-white">
@@ -272,7 +339,9 @@
             <!-- </div> -->
             <!-- <div class="col-sm-12 col-lg-6 col-md-6"> -->
             <div>
-                               <a href="https://www.passioncode.in/"><p style="padding: 0px; margin: 0px;">This website is crafted by <b>Passion Code</b></p></a>
+                <a href="https://www.passioncode.in/">
+                    <p style="padding: 0px; margin: 0px;">This website is crafted by <b>Passion Code</b></p>
+                </a>
 
             </div>
             <!-- </div> -->

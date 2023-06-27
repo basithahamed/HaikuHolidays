@@ -48,7 +48,24 @@
     <script src="../js/notification.js"></script>
 
 
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="kasi.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
 </head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+    * {
+    margin: 0;
+    /* color: #8b0000; */
+    padding: 0;
+    /* box-sizing: border-box; */
+    font-family: 'Poppins',sans-serif;
+    /* font-weight: bolder; */
+}
+</style>
 <script>
     function readMore() {
         var x = document.getElementById("readmore")
@@ -109,8 +126,53 @@
 
             <ul class="links">
                 <li class="link-items"><a href="../index.html">Home</a></li>
-                <li class="link-items"><a href="../pilgrimage.html">Pilgrimage</a></li>
-                <li class="link-items"><a href="../domestic.html">Domestic</a></li>
+                <li class="link-items">
+                    <div class="dropdown">
+                        <a href="pilgrimage.html">Pilgrimage</a>
+                        <div class="dropdown-content">
+                            <ul style="padding: 0px;">
+                                <li class="link-items" style="padding-top: 5px;" id="some"><a
+                                        href="shirdi.html">Shirdi</a></li>
+                                <li class="link-items" style="padding-top: 5px;" id="some"><a href="kasi.html">Kasi</a>
+                                </li>
+                                <li class="link-items" style="padding-top: 5px;" id="some"><a
+                                        href="odisha.html">Odisha</a></li>
+                                <li class="link-items" style="padding-top: 5px;" id="some"><a
+                                        href="baidyanth.html">Baidyanath Jyothirlinga</a></li>
+                                <li class="link-items" style="padding-top: 5px;" id="some"><a
+                                        href="gujarat.html">Gujarat</a></li>
+                                <li class="link-items" style="padding-top: 5px;" id="some"><a href="madya.html">Madya
+                                        Pradesh</a></li>
+                            </ul>
+
+                        </div>
+                    </div>
+                </li>
+                <li class="link-items">
+                    <div class="dropdown">
+                        <a href="pilgrimage.html">Domestic</a>
+                        <div class="dropdown-content">
+                            <ul style="padding: 0px;">
+                                <li class="link-items" style="padding-top: 5px;" id="some"><a href="goa.html">Goa</a>
+                                </li>
+                                <li class="link-items" style="padding-top: 5px;" id="some"><a
+                                        href="delhi.html">Delhi</a>
+                                </li>
+                                <li class="link-items" style="padding-top: 5px;" id="some"><a
+                                        href="kashmir.html">Kashmir</a></li>
+                                <li class="link-items" style="padding-top: 5px;" id="some"><a
+                                        href="andaman.html">Andaman</a></li>
+                                <li class="link-items" style="padding-top: 5px;" id="some"><a
+                                        href="darjeeling.html">Darjeeling</a></li>
+                                <li class="link-items" style="padding-top: 5px;" id="some"><a
+                                        href="manali.html">Manali</a></li>
+                                <li class="link-items" style="padding-top: 5px;" id="some"><a
+                                        href="mussoorie.html">Mussoorie</a></li>
+                            </ul>
+
+                        </div>
+                    </div>
+                </li>
                 <li class="link-items"><a href="#">International</a></li>
                 <li class="link-items"><a href="#contact">Contact</a></li>
             </ul>
@@ -123,12 +185,34 @@
         <ul class="mobilelinks">
             <li class="link-items"><a href="../index.html">Home</a></li>
             <li class="link-items"><a href="../pilgrimage.html">Pilgrimage</a></li>
-            <li class="link-items"><a href="../domestic.html">Domestic</a></li>
+            <li class="link-items">
+                <div class="dropdown">
+                    <a href="pilgrimage.html">Domestic</a>
+                    <div class="dropdown-content">
+                        <ul style="padding: 0px;">
+                            <li class="link-items" style="padding-top: 5px;" id="some"><a href="goa.html">Goa</a></li>
+                            <li class="link-items" style="padding-top: 5px;" id="some"><a href="delhi.html">Delhi</a>
+                            </li>
+                            <li class="link-items" style="padding-top: 5px;" id="some"><a
+                                    href="kashmir.html">Kashmir</a></li>
+                            <li class="link-items" style="padding-top: 5px;" id="some"><a
+                                    href="andaman.html">Andaman</a></li>
+                            <li class="link-items" style="padding-top: 5px;" id="some"><a
+                                    href="darjeeling.html">Darjeeling</a></li>
+                            <li class="link-items" style="padding-top: 5px;" id="some"><a href="manali.html">Manali</a>
+                            </li>
+                            <li class="link-items" style="padding-top: 5px;" id="some"><a
+                                    href="mussoorie.html">Mussoorie</a></li>
+                        </ul>
+
+                    </div>
+                </div>
+            </li>
             <li class="link-items"><a href="#">International</a></li>
             <li class="link-items"><a href="#contact">Contact</a></li>
+
         </ul>
     </div>
-
     <!-- for the hero-banner -->
     <div class="banners">
         <div class="hero-bannerL">

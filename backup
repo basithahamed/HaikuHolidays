@@ -89,7 +89,26 @@
             <ul class="links">
                 <li class="link-items"><a href="../index.html">Home</a></li>
                 <li class="link-items"><a href="#">Pilgrimage</a></li>
-                <li class="link-items"><a href="../domestic.html">Domestic</a></li>
+                 <li class="link-items"> <div class="dropdown">
+                    <a href="pilgrimage.html">Domestic</a>
+                    <div class="dropdown-content">
+                        <ul style="padding: 0px;">
+                            <li class="link-items" style="padding-top: 5px;" id="some"><a
+                                    href="pilgrimage/goa.html" >Goa</a></li>
+                            <li class="link-items" style="padding-top: 5px;" id="some"><a href="pilgrimage/delhi.html">Delhi</a>
+                            </li>
+                            <li class="link-items" style="padding-top: 5px;" id="some"><a
+                                    href="pilgrimage/kashmir.html">Kashmir</a></li>
+                            <li class="link-items" style="padding-top: 5px;" id="some"><a
+                                    href="pilgrimage/andaman.html">Andaman</a></li>
+                            <li class="link-items" style="padding-top: 5px;" id="some"><a
+                                    href="pilgrimage/darjeeling.html">Darjeeling</a></li>
+                            <li class="link-items" style="padding-top: 5px;" id="some"><a href="pilgrimage/manali.html">Manali</a></li>
+                            <li class="link-items" style="padding-top: 5px;" id="some"><a href="pilgrimage/mussoorie.html">Mussoorie</a></li>
+                        </ul>
+
+                    </div>
+                </div></li>
                 <li class="link-items"><a href="#">International</a></li>
                 <li class="link-items"><a href="#contact">Contact</a></li>
             </ul>

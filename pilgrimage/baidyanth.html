@@ -51,48 +51,46 @@
 
 </head>
 <script>
-    function readMore()
-{
-    var x=document.getElementById("readmore")
-    if(x.style.display=="block")
-    {
-        document.getElementById("readMorebtn").innerHTML="ReadMore"
-        x.style.display = 'none';
+    function readMore() {
+        var x = document.getElementById("readmore")
+        if (x.style.display == "block") {
+            document.getElementById("readMorebtn").innerHTML = "ReadMore"
+            x.style.display = 'none';
+
+        }
+        else {
+            document.getElementById("readMorebtn").innerHTML = "ReadLess"
+            x.style.display = 'block';
+        }
 
     }
-    else
-    {
-        document.getElementById("readMorebtn").innerHTML="ReadLess"
-        x.style.display = 'block';
-    }
-    
-}
 </script>
 <style>
-.hero-bannerL {
+    .hero-bannerL {
 
-background: radial-gradient(circle, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.5)), url(https://haikuholidays.com/pilgrimage/img/main1.jpeg);
-background-size:100% 100% ; 
-background-position: center;
-background-repeat: no-repeat; 
-height: 100%;
-width: 100%;
-
-
-}
-
-.hero-bannerR {
-background: radial-gradient(circle, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.5)), url(https://haikuholidays.com/images/toppicks/2.png);
-background-size: 100% 100%;
-background-position: center;
-background-repeat: no-repeat; 
-height: 100%;
-width: 100%;
+        background: radial-gradient(circle, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.5)), url(https://haikuholidays.com/pilgrimage/img/main1.jpeg);
+        background-size: 100% 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+        height: 100%;
+        width: 100%;
 
 
+    }
 
-}
+    .hero-bannerR {
+        background: radial-gradient(circle, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.5)), url(https://haikuholidays.com/images/toppicks/2.png);
+        background-size: 100% 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+        height: 100%;
+        width: 100%;
+
+
+
+    }
 </style>
+
 <body>
 
     <!-- header starting  -->
@@ -100,8 +98,8 @@ width: 100%;
 
         <div class="top-left ">
             <div class="logo">
- <a href="../index.html">                <img src="https://haikuholidays.com/images/logo.png" alt="">
-        </a>                <!-- <H1>Logo</H1> -->
+                <a href="../index.html"> <img src="https://haikuholidays.com/images/logo.png" alt="">
+                </a> <!-- <H1>Logo</H1> -->
             </div>
         </div>
         <div class="ham" onclick="showMenu()">
@@ -112,8 +110,53 @@ width: 100%;
 
             <ul class="links">
                 <li class="link-items"><a href="../index.html">Home</a></li>
-                <li class="link-items"><a href="#">Pilgrimage</a></li>
-                <li class="link-items"><a href="../domestic.html">Domestic</a></li>
+                <li class="link-items">
+                    <div class="dropdown">
+                        <a href="pilgrimage.html">Pilgrimage</a>
+                        <div class="dropdown-content">
+                            <ul style="padding: 0px;">
+                                <li class="link-items" style="padding-top: 5px;" id="some"><a
+                                        href="shirdi.html">Shirdi</a></li>
+                                <li class="link-items" style="padding-top: 5px;" id="some"><a href="kasi.html">Kasi</a>
+                                </li>
+                                <li class="link-items" style="padding-top: 5px;" id="some"><a
+                                        href="odisha.html">Odisha</a></li>
+                                <li class="link-items" style="padding-top: 5px;" id="some"><a
+                                        href="baidyanth.html">Baidyanath Jyothirlinga</a></li>
+                                <li class="link-items" style="padding-top: 5px;" id="some"><a
+                                        href="gujarat.html">Gujarat</a></li>
+                                <li class="link-items" style="padding-top: 5px;" id="some"><a href="madya.html">Madya
+                                        Pradesh</a></li>
+                            </ul>
+
+                        </div>
+                    </div>
+                </li>
+                <li class="link-items">
+                    <div class="dropdown">
+                        <a href="pilgrimage.html">Domestic</a>
+                        <div class="dropdown-content">
+                            <ul style="padding: 0px;">
+                                <li class="link-items" style="padding-top: 5px;" id="some"><a href="goa.html">Goa</a>
+                                </li>
+                                <li class="link-items" style="padding-top: 5px;" id="some"><a
+                                        href="delhi.html">Delhi</a>
+                                </li>
+                                <li class="link-items" style="padding-top: 5px;" id="some"><a
+                                        href="kashmir.html">Kashmir</a></li>
+                                <li class="link-items" style="padding-top: 5px;" id="some"><a
+                                        href="andaman.html">Andaman</a></li>
+                                <li class="link-items" style="padding-top: 5px;" id="some"><a
+                                        href="darjeeling.html">Darjeeling</a></li>
+                                <li class="link-items" style="padding-top: 5px;" id="some"><a
+                                        href="manali.html">Manali</a></li>
+                                <li class="link-items" style="padding-top: 5px;" id="some"><a
+                                        href="mussoorie.html">Mussoorie</a></li>
+                            </ul>
+
+                        </div>
+                    </div>
+                </li>
                 <li class="link-items"><a href="#">International</a></li>
                 <li class="link-items"><a href="#contact">Contact</a></li>
             </ul>
@@ -124,20 +167,43 @@ width: 100%;
     <div class="lmobile" id="lmobile" class="bold">
         <p onclick="showMenu()" class="closebutton"><i class="fa-solid fa-x"></i></p>
         <ul class="mobilelinks">
-            <li class="link-items">Home</li>
-            <li class="link-items">Pilgrimage</li>
-            <li class="link-items">Domestic</li>
-            <li class="link-items">International</li>
-            <li class="link-items">Contact</li>
+            <li class="link-items"><a href="../index.html">Home</a></li>
+            <li class="link-items"><a href="../pilgrimage.html">Pilgrimage</a></li>
+            <li class="link-items">
+                <div class="dropdown">
+                    <a href="pilgrimage.html">Domestic</a>
+                    <div class="dropdown-content">
+                        <ul style="padding: 0px;">
+                            <li class="link-items" style="padding-top: 5px;" id="some"><a href="goa.html">Goa</a></li>
+                            <li class="link-items" style="padding-top: 5px;" id="some"><a href="delhi.html">Delhi</a>
+                            </li>
+                            <li class="link-items" style="padding-top: 5px;" id="some"><a
+                                    href="kashmir.html">Kashmir</a></li>
+                            <li class="link-items" style="padding-top: 5px;" id="some"><a
+                                    href="andaman.html">Andaman</a></li>
+                            <li class="link-items" style="padding-top: 5px;" id="some"><a
+                                    href="darjeeling.html">Darjeeling</a></li>
+                            <li class="link-items" style="padding-top: 5px;" id="some"><a href="manali.html">Manali</a>
+                            </li>
+                            <li class="link-items" style="padding-top: 5px;" id="some"><a
+                                    href="mussoorie.html">Mussoorie</a></li>
+                        </ul>
+
+                    </div>
+                </div>
+            </li>
+            <li class="link-items"><a href="#">International</a></li>
+            <li class="link-items"><a href="#contact">Contact</a></li>
+
         </ul>
     </div>
 
     <!-- for the hero-banner -->
     <div class="banners">
-        <div class="hero-bannerL" >
+        <div class="hero-bannerL">
 
         </div>
-        <div class="hero-bannerR" >
+        <div class="hero-bannerR">
 
         </div>
 
@@ -159,7 +225,8 @@ width: 100%;
     </div>
 
     <section class="body">
-        <h2 class="boldtext text-center"><b>Experience a Spiritual Journey to BAIDYANATH JYOTHIRLINGA with Haiku Holidays</b></h2>
+        <h2 class="boldtext text-center"><b>Experience a Spiritual Journey to BAIDYANATH JYOTHIRLINGA with Haiku
+                Holidays</b></h2>
         <!-- the whole Container -->
         <div class="wholelist">
 
@@ -169,12 +236,14 @@ width: 100%;
                     <h5 class="boldtext underline" style="color: #8b0000;padding: 40px 0px 10px 0px; margin: 0px; ">Our
                         Package
                         includes</h5>
-                    <li class="packagelistitem my-3" style="list-style-type: disclosure-closed;">Round-trip economy air tickets (Chennai - Durgapur, Kolkata - Chennai)
+                    <li class="packagelistitem my-3" style="list-style-type: disclosure-closed;">Round-trip economy air
+                        tickets (Chennai - Durgapur, Kolkata - Chennai)
                     </li>
                     <li class="packagelistitem my-3" style="list-style-type: disclosure-closed;">AC Transfers and
                         sightseeing
                     </li>
-                    <li class="packagelistitem my-3" style="list-style-type: disclosure-closed;">3 star Standard Accommodation
+                    <li class="packagelistitem my-3" style="list-style-type: disclosure-closed;">3 star Standard
+                        Accommodation
 
                     </li>
                     <li class="packagelistitem my-3" style="list-style-type: disclosure-closed;">All Time Food
@@ -185,7 +254,8 @@ width: 100%;
                     <li class="packagelistitem my-3" style="list-style-type: disclosure-closed;">Tamil Speaking Guide
 
                     </li>
-                    <li class="packagelistitem my-3" style="list-style-type: disclosure-closed;">Toll, Parking, and Driver beta
+                    <li class="packagelistitem my-3" style="list-style-type: disclosure-closed;">Toll, Parking, and
+                        Driver beta
 
 
                     </li>
@@ -207,55 +277,76 @@ width: 100%;
 
         <!-- For the Para Content  -->
         <div class="" id="paragraph">
-            <p><span class="default">Welcome to Haiku Holidays, your ultimate destination for a peaceful and soulful getaway. We are delighted to offer you an exclusive Baidyanath Jyothirlinga and Kolkata flight trip for 3 nights and 4 days, starting at just Rs. 28,500 per person.
+            <p><span class="default">Welcome to Haiku Holidays, your ultimate destination for a peaceful and soulful
+                    getaway. We are delighted to offer you an exclusive Baidyanath Jyothirlinga and Kolkata flight trip
+                    for 3 nights and 4 days, starting at just Rs. 28,500 per person.
 
 
                     affordable price.
                     <br>
                     <br>
-                   
-This trip includes visits to the spiritual wonders the Baba Baidyanath Jyotirlinga, and the bustling city of Kolkata, with stops at iconic landmarks such as the Victoria Memorial and the Kalighat Temple. </span></p>
+
+                    This trip includes visits to the spiritual wonders the Baba Baidyanath Jyotirlinga, and the bustling
+                    city of Kolkata, with stops at iconic landmarks such as the Victoria Memorial and the Kalighat
+                    Temple. </span></p>
 
             <br>
             <br>
             <span id="readmore">
                 <br>
                 <br>
-                <span class="redcolor ">Day 1 : </span> Boarding the flight from Chennai International Airport at 2:00 PM and reaching Durgapur BAIDYANATH JYOTHIRLINGA & KOLKLATA FLIGHT TRIP 2 at 3:40 PM. From there, we will proceed to Deoghar and check-in to our comfortable 3- star standard accommodation for a relaxing overnight stay.
+                <span class="redcolor ">Day 1 : </span> Boarding the flight from Chennai International Airport at 2:00
+                PM and reaching Durgapur BAIDYANATH JYOTHIRLINGA & KOLKLATA FLIGHT TRIP 2 at 3:40 PM. From there, we
+                will proceed to Deoghar and check-in to our comfortable 3- star standard accommodation for a relaxing
+                overnight stay.
 
                 <br>
                 <br>
-                <span class="redcolor ">Day 2 :</span> After a delicious breakfast, we'll set out to explore the spiritual wonders of Deoghar. Our first stop is the awe-inspiring Baba Baidyanath Jyotirlinga, one of the 12 Jyotirlingas in India and an important pilgrimage site for Hindus. We'll also visit the Jayadurga Sakthi Peedam, Naulakha Temple, and Trikut Pravat before returning to our accommodation in Durgapur for another comfortable overnight stay.
+                <span class="redcolor ">Day 2 :</span> After a delicious breakfast, we'll set out to explore the
+                spiritual wonders of Deoghar. Our first stop is the awe-inspiring Baba Baidyanath Jyotirlinga, one of
+                the 12 Jyotirlingas in India and an important pilgrimage site for Hindus. We'll also visit the Jayadurga
+                Sakthi Peedam, Naulakha Temple, and Trikut Pravat before returning to our accommodation in Durgapur for
+                another comfortable overnight stay.
                 <br>
                 <br>
-                <span class="redcolor ">Day 3 : </span> AAfter breakfast, we'll proceed to the bustling city of Kolkata, where we'll have the opportunity to explore some of its iconic landmarks and soak up its vibrant culture. Our first stop is the magnificent Victoria Memorial, a stunning marble monument built to commemorate Queen Victoria's reign. Next, we'll visit the revered Kalighat Temple, an important pilgrimage site dedicated to Goddess Kali. No visit to Kolkata is complete without a stop at the iconic Howrah Bridge, one of the city's most recognizable landmarks. We'll also have time for shopping before returning to our accommodation in Kolkata for a comfortable overnight stay.
+                <span class="redcolor ">Day 3 : </span> AAfter breakfast, we'll proceed to the bustling city of Kolkata,
+                where we'll have the opportunity to explore some of its iconic landmarks and soak up its vibrant
+                culture. Our first stop is the magnificent Victoria Memorial, a stunning marble monument built to
+                commemorate Queen Victoria's reign. Next, we'll visit the revered Kalighat Temple, an important
+                pilgrimage site dedicated to Goddess Kali. No visit to Kolkata is complete without a stop at the iconic
+                Howrah Bridge, one of the city's most recognizable landmarks. We'll also have time for shopping before
+                returning to our accommodation in Kolkata for a comfortable overnight stay.
                 <br>
                 <br>
-                <span class="redcolor ">Day 4 : </span> After breakfast we'll visit the renowned Dhakshineshwar Kali Temple, an important Hindu temple dedicated to Goddess Kali, before heading to the Marble Palace and Jorasanko Thakurbari to soak up the cultural heritage of Kolkata. Finally, we'll board an evening flight back to Chennai with unforgettable memories of our trip to the Baidyanath Jyotirlinga and Kolkata.
+                <span class="redcolor ">Day 4 : </span> After breakfast we'll visit the renowned Dhakshineshwar Kali
+                Temple, an important Hindu temple dedicated to Goddess Kali, before heading to the Marble Palace and
+                Jorasanko Thakurbari to soak up the cultural heritage of Kolkata. Finally, we'll board an evening flight
+                back to Chennai with unforgettable memories of our trip to the Baidyanath Jyotirlinga and Kolkata.
 
 
 
-                
-                
-               
 
-                </span>
-                <span onclick="readMore()" style="color: red;" id="readMorebtn">ReadMore</span>
+
+
+
+            </span>
+            <span onclick="readMore()" style="color: red;" id="readMorebtn">ReadMore</span>
             <br>
-            
-                
+
+
             <b>
                 Contact us today to book your trip and create unforgettable memories that will last a lifetime.
 
 
-                
+
                 <br>
                 <br>
             </b>
-            
+
         </div>
     </section>
-    <footer id="contact">        <div class="containerfooter">
+    <footer id="contact">
+        <div class="containerfooter">
             <div class="row">
                 <div class="col-md-12 col-lg-4 col-sd-12 text-center my-4">
                     <h4>HAIKU HOLIDAYS</h4>
@@ -297,7 +388,9 @@ This trip includes visits to the spiritual wonders the Baba Baidyanath Jyotirlin
             <!-- </div> -->
             <!-- <div class="col-sm-12 col-lg-6 col-md-6"> -->
             <div>
-                               <a href="https://www.passioncode.in/"><p style="padding: 0px; margin: 0px;">This website is crafted by <b>Passion Code</b></p></a>
+                <a href="https://www.passioncode.in/">
+                    <p style="padding: 0px; margin: 0px;">This website is crafted by <b>Passion Code</b></p>
+                </a>
 
             </div>
             <!-- </div> -->
@@ -305,4 +398,5 @@ This trip includes visits to the spiritual wonders the Baba Baidyanath Jyotirlin
     </div>
 
 </body>
+
 </html>
