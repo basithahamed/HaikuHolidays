@@ -23,47 +23,84 @@
 
 
 
-  <!-- <link rel="stylesheet" href="css/magicscroll.css" /> -->
-  <!-- <script src="js/magicscroll.js"></script> -->
-  <!-- <script src="js/script.js"></script> -->
-
-
 </head>
 <style>
+  @import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@200&family=Island+Moments&family=Montserrat:ital,wght@0,100;1,200&family=Open+Sans&family=Poppins:wght@300&display=swap');
+  body{
+    font-family: 'Hanken Grotesk', sans-serif;
+font-family: 'Island Moments', cursive;
+font-family: 'Montserrat', sans-serif;
+font-family: 'Open Sans', sans-serif;
+font-family: 'Poppins', sans-serif;
+  }
+  footer {
+    background-color: #362916;
+    height: 100%;
+    width: 100%;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 3%;
+  }
 
+  .some {
+    width: 70%;
+    margin: auto;
+    padding-left: 5%;
+  }
+
+  ul {
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+  }
+  .needcenter{
+    padding: 0px 5% 0 5%;
+  }
+  #links
+  {
+    display: flex;
+    flex-direction: row;
+  }
+  @media only screen and (max-width: 600px) {
+    .needcenter
+    {
+      text-align: center;
+      padding: 0px;
+    }
+  }
 </style>
 
 <body>
+  <footer>
+    <div class="some">
+      <div class="row">
+        <div class="col-md-6 col-lg-4 col-sm-12 needcenter">
+          <h2 class=""><b>HAIKU HOLIDAYS</b></h2>
+          <p class="">We provide you the best travel experience possible!
 
-
-  <!-- <section class="body"> -->
-  <div class="dabba">
-    <div class="row">
-      <div class="col-md-6 col-lg-5 col-sd-12 my-5 box">
-
-      </div>
-      <div class="col-md-6 col-lg-5 col-sd-12 my-5 box">
-
-      </div>
-      <div class="col-md-6 col-lg-5 col-sd-12 my-5 box">
-
-      </div>
-      <div class="col-md-6 col-lg-5 col-sd-12 my-5 box">
-
+          </p>
+        </div>
+        <div class="col-md-6 col-lg-4 col-sm-12 needcenter">
+          <h2 class="needcenter"><b>Follow us on :</b></h2>
+          <ul class="needcenter" id="links">
+            <li class="needcenter"><a href="" style="color: azure; font-size: 25px;" ><i class="fa-brands fa-facebook"></i> </a></li>
+            <li class="needcenter"><a href="" style="color: azure; font-size: 25px;" ><i class="fa-brands fa-facebook"></i> </a></li>
+            <li class="needcenter"><a href="" style="color: azure; font-size: 25px;" ><i class="fa-brands fa-facebook"></i> </a></li>
+          </ul>
+        </div>
+        <div class="col-md-6 col-lg-4 col-sm-12 needcenter">
+          <h2 class="needcenter"><b>Contact Us :</b></h2>
+          <ul class="needcenter">
+            <li class="needcenter"><i class="fa-brands fa-facebook"></i> +91 88386 13687</li>
+            <li class="needcenter"><i class="fa-brands fa-facebook"></i> +91 88386 13687</li>
+            <li class="needcenter"><i class="fa-brands fa-facebook"></i> +91 88386 13687</li>
+          </ul>
+        </div>
       </div>
     </div>
-  </div>
-  <!-- </section> -->
-
-
-
-  <!-- test -->
-
-
-
-
-
+  </footer>
 </body>
-
 
 </html>

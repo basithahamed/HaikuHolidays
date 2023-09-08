@@ -1,205 +1,73 @@
-<!DOCTYPE html>
-<html lang="en">
+footer {
+    background-color: #362916;
+    height: 100%;
+    width: 100%;
+    margin-top: 70px;
+}
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <!-- ######## BootStrap ###### -->
-    <!-- # css -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
-    <!-- ## js -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
-        crossorigin="anonymous"></script>
-    <!-- end -->
-    <!-- font awsome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <!-- end -->
-
-    <!-- google font -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@200&family=Island+Moments&family=Montserrat:ital,wght@0,100;1,200&family=Open+Sans&family=Poppins:wght@400;500&display=swap"
-        rel="stylesheet">
-    <!-- end -->
-    <!-- for the header -->
-    <link rel="stylesheet" href="../css/header.css">
-    <link rel="stylesheet" href="../css/goa-top.css">
-    <link rel="stylesheet" href="../css/pilgrimagetopbar.css">
-    <link rel="stylesheet" href="../css/secondaryfooter.css">
+.footerfirst {
+    text-align: justify;
+}
 
 
-    <!-- for the page style -->
-    <!-- <link rel="stylesheet" href="../css/wholepilgri.css"> -->
-    <!-- <link rel="stylesheet" href="/css/font.css"> -->
-    <link rel="stylesheet" href="/css/goatype.css">
-    <!-- Font  this page only Google-->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@200&family=Island+Moments&family=Montserrat:ital,wght@0,100;1,200&family=Open+Sans&family=Poppins:ital,wght@1,900&display=swap"
-        rel="stylesheet">
-    <!-- end -->
+ul {
+    list-style: none;
+    padding: 0px;
+    text-align: left;
+}
+
+.address {
+    /* margin-left: 250px; */
+    margin-top: 40px;
+    text-align: left;
+}
 
 
 
+.addwrap
+{
+    width: 100%;
+    margin: auto;
+}
+.info{
+    padding-left: 20px;
+}
 
-</head>
-<script>
-    function readMore() {
-        var x = document.getElementById("readmore")
-        if (x.style.display == "block") {
-            document.getElementById("readMorebtn").innerHTML = "ReadMore"
-            x.style.display = 'none';
+#pcode
+{
+    display: flex;
+    flex-direction: row;
+    
+    justify-content: space-between;
+    padding: 0px;
+    margin: 0px;
+}
 
-        }
-        else {
-            document.getElementById("readMorebtn").innerHTML = "ReadLess"
-            x.style.display = 'block';
-        }
-
+.btn {
+    padding: 0.9rem 2.4rem;
+    border-radius: 50px;
+    font-weight: 600;
+    color: white;
+    border: 0.1px solid white;
+    background-color: #362916;
+  }
+@media only screen and (max-width: 600px) {
+    .address {
+        /* margin-top: 40px; */
     }
-</script>
-<style>
-
-</style>
-
-<body>
-
-    <!-- header starting  -->
-    <!-- <div class="topbar">
-
-        <div class="top-left ">
-            <div class="logo">
- <a href="../index.html">                <img src="https://haikuholidays.com/images/logo.png" alt="">
-        </a>            </div>
-        </div>
-        <div class="ham" onclick="showMenu()">
-            <i class="fa-solid fa-bars"></i>
-        </div>
-
-        <div class="top-right  desklink ">
-
-            <ul class="links">
-                <li class="link-items"><a href="../index.html">Home</a></li>
-                <li class="link-items"><a href="#">Pilgrimage</a></li>
-                 <li class="link-items"> <div class="dropdown">
-                    <a href="pilgrimage.html">Domestic</a>
-                    <div class="dropdown-content">
-                        <ul style="padding: 0px;">
-                            <li class="link-items" style="padding-top: 5px;" id="some"><a
-                                    href="pilgrimage/goa.html" >Goa</a></li>
-                            <li class="link-items" style="padding-top: 5px;" id="some"><a href="pilgrimage/delhi.html">Delhi</a>
-                            </li>
-                            <li class="link-items" style="padding-top: 5px;" id="some"><a
-                                    href="pilgrimage/kashmir.html">Kashmir</a></li>
-                            <li class="link-items" style="padding-top: 5px;" id="some"><a
-                                    href="pilgrimage/andaman.html">Andaman</a></li>
-                            <li class="link-items" style="padding-top: 5px;" id="some"><a
-                                    href="pilgrimage/darjeeling.html">Darjeeling</a></li>
-                            <li class="link-items" style="padding-top: 5px;" id="some"><a href="pilgrimage/manali.html">Manali</a></li>
-                            <li class="link-items" style="padding-top: 5px;" id="some"><a href="pilgrimage/mussoorie.html">Mussoorie</a></li>
-                        </ul>
-
-                    </div>
-                </div></li>
-                <li class="link-items"><a href="#">International</a></li>
-                <li class="link-items"><a href="#contact">Contact</a></li>
-            </ul>
-
-        </div>
-
-    </div>
-    <div class="lmobile" id="lmobile" class="bold">
-        <p onclick="showMenu()" class="closebutton"><i class="fa-solid fa-x"></i></p>
-        <ul class="mobilelinks">
-            <li class="link-items">Home</li>
-            <li class="link-items">Pilgrimage</li>
-            <li class="link-items">Domestic</li>
-            <li class="link-items">International</li>
-            <li class="link-items">Contact</li>
-        </ul>
-    </div> -->
-
-    <main>
-        <!-- for the banner and stuffs -->
-        <div class="content">
-            <div class="title">
-                <p class="titlep">Haiku Holidays Goa Package</p>
-            </div>
-            <div class="columns">
-                <div class="left">
-                    <p class="one">Duration</p>
-                    <p class="two">3 Nights / 4 Days</p>
-                </div>
-                <div class="right" style="right: 403px;">
-                    <p class="one">Price</p>
-                    <p class="two">Rs. 58,900 per couple</p>
-                </div>
-            </div>
-            <img src="https://haikuholidays.com/domestic/img/main2.jpg" alt="">
-        </div>
-       
-       
-       
-
-    </main>
-
-
-
-    <!-- <footer>
-        <div class="containerfooter">
-            <div class="row">
-                <div class="col-md-12 col-lg-4 col-sd-12 text-center my-4">
-                    <h4>HAIKU HOLIDAYS</h4>
-                    <p>We provide you the best travel experience possible!</p>
-                </div>
-                <div class="col-md-12 col-lg-4 col-sd-12 text-center my-4">
-                    <h4>Follow us on:</h4>
-                    <a href="#" style="font-size: 25px; color:#fff; "><i class="fa-brands fa-facebook"></i></a>
-                    <a href="#" style="font-size: 25px; padding-left: 10px;color:#fff"><i
-                            class="fa-brands fa-instagram"></i></a>
-                    <a href="#" style="font-size: 25px; padding-left: 10px;color:#fff"><i
-                            class="fa-regular fa-envelope"></i></a>
-                </div>
-                <div class="col-md-12 col-lg-4 col-sd-12 text-center my-4">
-                    <ul style>
-                        <li class="text-white">
-                            <p> <i class="fa-solid fa-phone"></i>&nbsp;+91 88386 13687</p>
-                        </li>
-                        <li class="text-white">
-                            <p><i class="fa-solid fa-envelope"></i>&nbsp; info@haikuholidays.com
-                            </p>
-                        </li>
-                    </ul>
-                </div>
-
-
-            </div>
-        </div>
-    </footer> -->
-    <!-- <div class="credits">
-        <div id="pcode">
-
-            <div>
-                <p style="padding: 0px; margin: 0px;">Copyright © 2023 by
-                    Haiku Holidays
-                    . All Rights Reserved.</p>
-            </div>
-          
-            <div>
-                               <a href="https://www.passioncode.in/"><p style="padding: 0px; margin: 0px;">This website is crafted by <b>Passion Code</b></p></a>
-
-            </div>
-        </div>
-    </div> -->
-
-</body>
-
-</html>
+    .info{
+        padding-left: 50px;
+    }
+    .credits
+    {
+        /* flex-wrap: wrap; */
+        /* justify-content: center; */
+        font-size: 12px;
+    }
+    #pcode
+    {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+}

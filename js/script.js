@@ -6,13 +6,13 @@ setInterval(() => {
     if(color==0)
     {
         changeMe(imageArr[color]);
-        console.log(imageArr[color])
+        // console.log(imageArr[color])
         color=color+1
     }
     else if(color==1)
     {
         changeMe(imageArr[color]);
-        console.log(imageArr[color])
+        // console.log(imageArr[color])
 
         color=0
 

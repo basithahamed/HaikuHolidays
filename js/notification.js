@@ -18,7 +18,7 @@ function showMenu() {
 function changeMe(y)
 {
     var x=document.getElementById("pic")
-    console.log(y)
+    // console.log(y)
     x.style.backgroundImage=`linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(${y})`;
 
 }

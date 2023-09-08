@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- ######## BootStrap ###### -->
+    <!-- # css -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <!-- ## js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
+    <!-- end -->
+    <!-- font awsome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- end -->
+
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@200&family=Island+Moments&family=Montserrat:ital,wght@0,100;1,200&family=Open+Sans&family=Poppins:wght@400;500&display=swap"
+        rel="stylesheet">
+    <!-- end -->
+    <!-- for the header -->
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/mainfooter.css">
+    <!-- for the index style -->
+    <!-- <link rel="stylesheet" href="css/indexstyle.css"> -->
+    <link rel="stylesheet" href="css/pilgrimagepage.css">
+    <link rel="stylesheet" href="css/font.css">
+    <script src="js/notification.js"></script>
+
+    <!-- <link rel="stylesheet" href="css/magicscroll.css" /> -->
+    <!-- <script src="js/magicscroll.js"></script> -->
+    <!-- <script src="js/script.js"></script> -->
+
+
+</head>
+
+<script>
+
+</script>
+
+<body>
+
+    <!-- header starting  -->
+    <div class="topbar">
+
+        <div class="top-left ">
+            <div class="logo">
+                <img src="https://haikuholidays.com/images/logo.png" alt="">
+                <!-- <H1>Logo</H1> -->
+            </div>
+        </div>
+        <div class="ham" onclick="showMenu()">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+
+        <div class="top-right  desklink ">
+
+            <ul class="links">
+                <li class="link-items"><a href="index.html">Home</a></li>
+                <li class="link-items">
+                    <div class="dropdown">
+                        <a href="pilgrimage.html">Pilgrimage</a>
+                        <div class="dropdown-content">
+                            <ul style="padding: 0px;">
+                                <li class="link-items" style="padding-top: 5px;" id="some"><a
+                                        href="pilgrimage/shirdi.html">Shirdi</a></li>
+                                <li class="link-items" style="padding-top: 5px;" id="some"><a
+                                        href="pilgrimage/kasi.html">Kasi</a>
+                                </li>
+                                <li class="link-items" style="padding-top: 5px;" id="some"><a
+                                        href="pilgrimage/odisha.html">Odisha</a></li>
+                                <li class="link-items" style="padding-top: 5px;" id="some"><a
+                                        href="pilgrimage/baidyanth.html">Baidyanath Jyothirlinga</a></li>
+                                <li class="link-items" style="padding-top: 5px;" id="some"><a
+                                        href="pilgrimage/gujarat.html">Gujarat</a></li>
+                                <li class="link-items" style="padding-top: 5px;" id="some"><a
+                                        href="pilgrimage/madya.html">Madya
+                                        Pradesh</a></li>
+                            </ul>
+
+                        </div>
+                    </div>
+                </li>
+                <li class="link-items"><a href="domestic.html">Domestic</a></li>
+                <li class="link-items"><a href="#">International</a></li>
+                <li class="link-items"><a href="#contact">Contact</a></li>
+            </ul>
+
+        </div>
+
+    </div>
+    <div class="lmobile" id="lmobile" class="bold">
+        <p onclick="showMenu()" class="closebutton"><i class="fa-solid fa-x"></i></p>
+        <ul class="mobilelinks">
+            <li class="link-items"><a href="index.html">Home</a></li>
+            <li class="link-items">
+                <div class="dropdown">
+                    <a href="pilgrimage.html">Pilgrimage</a>
+                    <div class="dropdown-content">
+                        <ul style="padding: 0px;">
+                            <li class="link-items" style="padding-top: 5px;" id="some"><a
+                                    href="pilgrimage/shirdi.html">Shirdi</a></li>
+                            <li class="link-items" style="padding-top: 5px;" id="some"><a
+                                    href="pilgrimage/kasi.html">Kasi</a>
+                            </li>
+                            <li class="link-items" style="padding-top: 5px;" id="some"><a
+                                    href="pilgrimage/odisha.html">Odisha</a></li>
+                            <li class="link-items" style="padding-top: 5px;" id="some"><a
+                                    href="pilgrimage/baidyanth.html">Baidyanath Jyothirlinga</a></li>
+                            <li class="link-items" style="padding-top: 5px;" id="some"><a
+                                    href="pilgrimage/gujarat.html">Gujarat</a></li>
+                            <li class="link-items" style="padding-top: 5px;" id="some"><a
+                                    href="pilgrimage/madya.html">Madya
+                                    Pradesh</a></li>
+                        </ul>
+
+                    </div>
+                </div>
+            </li>
+            <li class="link-items"><a href="domestic.html">Domestic</a></li>
+            <li class="link-items"><a href="#">International</a></li>
+            <li class="link-items"><a href="#contact">Contact</a></li>
+
+        </ul>
+    </div>
+    <!-- header Enddddd  -->
+
+    <!-- for the main banner -->
+
+    <div class="hero-banner" class="bold">
+        <div class="pic" id="pic">
+            <h2 id="haiku">EXPERIENCE DEVOTIONAL INDIA WITH HAIKU HOLIDAYS.
+            </h2>
+            <p class="para">Contact Us</p>
+        </div>
+    </div>
+    <div style="margin-top: 100px;">
+        <h2 class="text-center" style="font-weight: bold;">POPULAR DESTINATION
+        </h2>
+        <p class="text-center mx-4"> The best travel destinations for Indian pilgrimages, choose the best travel
+            experience from here!
+    </div>
+
+    </p>
+    <div class="container">
+        <div class="row">
+
+            <div class="col-md-6 col-lg-4 col-sd-12 my-4 ">
+                <div class="parentbox" id="badi">
+                    <div class="innerbox">
+                        <h4>Baidyanath Jyothirlinga</h4>
+                        <h5><a href="/pilgrimage/baidyanth.html" target="_blank">Know More...</a></h5>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4 col-sd-12 my-4">
+                <div class="parentbox" id="madya">
+                    <div class="innerbox">
+                        <h4>Madhya Pradesh</h4>
+                        <h5><a href="/pilgrimage/madya.html" target="_blank">Know More...</a></h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4 col-sd-12 my-4">
+                <div class="parentbox" id="kasi">
+                    <div class="innerbox">
+                        <h4>Kasi</h4>
+                        <h5><a href="/pilgrimage/kasi.html" target="_blank">Know More...</a></h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4 col-sd-12 my-4">
+                <div class="parentbox" id="guj">
+                    <div class="innerbox">
+                        <h4>Gujarat</h4>
+                        <h5><a href="/pilgrimage/gujarat.html" target="_blank">Know More...</a></h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- for the picks of haiku  -->
+
+    <!-- end -->
+
+
+
+
+
+    <!-- test -->
+
+
+    <!-- for the footer -->
+    <footer id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 col-md-12 col-lg-4 my-4 footerfirst">
+                    <div style="text-align: justify;">
+                        <h4 class="text-white text-center" style="font-size: 30px;">Haiku Holidays</h4>
+                        <p class="text-white text-center">We provide you the best travel experience
+                            possible!</p>
+
+                        <br>
+
+                        <button class="btn btn-secondary" style="display: flex; margin: auto;">Contact Us !</button>
+
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-12 col-lg-4 my-4">
+                    <h2 class="text-white text-center">Follow us on:</h2>
+                    <div class="text-center">
+                        <a href="text-center" style="font-size: 25px; color:#fff; "><i
+                                class="fa-brands fa-facebook"></i></a>
+                        <a href="text-center" style="font-size: 25px; padding-left: 10px;color:#fff"><i
+                                class="fa-brands fa-instagram"></i></a>
+                        <a href="text-center" style="font-size: 25px; padding-left: 10px;color:#fff"><i
+                                class="fa-regular fa-envelope"></i></a>
+                    </div>
+
+
+                </div>
+                <div class="col-sm-12 col-md-12 col-lg-4 my-4 mx-0">
+                    <a href="tel:+918838613687">
+                        <h2 class="text-white text-center ">Contact Us</h2>
+                    </a>
+                    <div class="h-50 d-flex align-items-center justify-content-center info ">
+                        <ul class="address">
+                            <li class="text-white">
+                                <p> <i class="fa-solid fa-phone"></i>&nbsp;+91 88386 13687</p>
+                            </li>
+                            <li class="text-white">
+                                <p><i class="fa-solid fa-envelope"></i>&nbsp; info@haikuholidays.com
+                                </p>
+                            </li>
+                            <li class="text-white">
+                                <p><i class="fa-solid fa-location-dot"></i>&nbsp; +91 88386 1368</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </footer>
+    kasi,baidyanath,gujarat,madhya pradesh
+
+    <div class="credits">
+        <div id="pcode">
+            <!-- <div class="col-sm-12 col-lg- col-md-6"> -->
+
+            <div>
+                <p style="padding: 0px; margin: 0px;">Copyright © 2023 by
+                    Haiku Holidays
+                    . All Rights Reserved.</p>
+            </div>
+            <!-- </div> -->
+            <!-- <div class="col-sm-12 col-lg-6 col-md-6"> -->
+            <div>
+                <a href="https://www.passioncode.in/">
+                    <p style="padding: 0px; margin: 0px;">This website is crafted by <b>Passion Code</b></p>
+                </a>
+
+            </div>
+            <!-- </div> -->
+        </div>
+    </div>
+</body>
+
+
+</html>
